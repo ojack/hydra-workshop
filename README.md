@@ -1,6 +1,8 @@
 # Workshop: Code and Democratic Tools
 Intersections, Feminism, Technology & Digital Humanities network (IFTe http://ifte.network/)
+
 13.11.2020
+
 led by [Olivia Jack](https://ojack.xyz)
 
 ## Intro to hydra
@@ -46,7 +48,7 @@ gradient().rotate(0, 2.6).repeat(3, 3, 0.5).out()
 
 #### Using external sources
 In addition to internal sources for , such as osc(), shape(), gradient(),
-hydra can use external sources such as a webcam, window of another application, video, 
+hydra can use external sources such as a webcam, window of another application, video,
 
 There are four source buffers that can be used to connect to outside visuals, named s0, s1, s2, s3.
 
@@ -124,7 +126,7 @@ osc(10)
 ### Modulation
 
 While blending functions combine the colors of two sources, modulation functions use the colors of one texture to affect the coordinates of the other texture.
-This creates a sort of displacement or warping effect. 
+This creates a sort of displacement or warping effect.
 
 modulate(texture, amount) uses the red and green channels of the input texture to modify the x and y coordinates of the base texture. More about modulation at: https://lumen-app.com/guide/modulation/
 ```
@@ -141,7 +143,7 @@ osc(10)
 ```
 
 ## Connecting to remote streams
-Any hydra instance can use other instances/windows containing hydra as input sources, as long as they are connected to the internet and not blocked by a firewall. Hydra uses webrtc (real time webstreaming) under the hood to share video streams between open windows. The included module rtc-patch-bay manages connections between connected windows, and can also be used as a standalone module to convert any website into a source within hydra. 
+Any hydra instance can use other instances/windows containing hydra as input sources, as long as they are connected to the internet and not blocked by a firewall. Hydra uses webrtc (real time webstreaming) under the hood to share video streams between open windows. The included module rtc-patch-bay manages connections between connected windows, and can also be used as a standalone module to convert any website into a source within hydra.
 
 To begin, open hydra simultaneously in two separate windows.
 In one of the windows, set a name for the given patch-bay source:
